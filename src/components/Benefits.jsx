@@ -71,6 +71,33 @@ const Benefits = () => {
             );
           })}
         </div>
+
+        {/* Google Maps Location Button */}
+        <div className="flex justify-center mt-8">
+          <a
+            href="https://maps.app.goo.gl/9XcpWbu535FmS67J8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-6 py-3 bg-n-7 rounded-full hover:bg-n-6 transition-colors duration-300 text-n-1 font-bold"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-n-1"
+            >
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+              <circle cx="12" cy="9" r="2.5" />
+            </svg>
+            View Location on Google Maps
+          </a>
+        </div>
       </div>
     </Section>
   );
