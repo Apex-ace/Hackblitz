@@ -18,16 +18,13 @@ const FAQSection = () => {
     },
     {
       question: "How to register?",
-      answer: "Follow this steps for registration : www.techfest.org > Competitions > CoDecode > Explore More -> Register > Fill all your details > You will be registered and now you must either Create a team/Join a team ."
+      answer: "Follow this steps for registration :Unstop > Hackblits  > Explore More -> Register > Fill all your details > You will be registered and now you must either Create a team/Join a team ."
     },
-    // {
-    //   question: "How do I contact customer support?",
-    //   answer: "Customer support is available 24/7 through live chat, email at support@example.com, or by phone at +1-800-123-4567. Our average response time is under 2 hours."
-    // },
-    // {
-    //   question: "Is there a mobile application available?",
-    //   answer: "Yes, our mobile app is available for both iOS and Android devices. You can download it from the App Store or Google Play Store for free and access all features on the go."
-    // }
+    {
+      question: "How do I contact customer support?",
+      answer: "Customer support is available 24/7 through email at acmjit@jitnagpur.edu.in."
+    },
+  
   ];
 
   const handleQuestionClick = (index) => {
