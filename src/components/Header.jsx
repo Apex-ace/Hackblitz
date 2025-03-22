@@ -71,20 +71,22 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        <Button 
-          className="hidden lg:flex" 
-          onClick={handleRegister}
-        >
-          Register
-        </Button>
+        <div className="flex items-center gap-4 ml-auto">
+          <Button 
+            className="flex" 
+            onClick={handleRegister}
+          >
+            Register
+          </Button>
 
-        <Button
-          className="ml-auto lg:hidden"
-          px="px-3"
-          onClick={toggleNavigation}
-        >
-          <MenuSvg openNavigation={openNavigation} />
-        </Button>
+          <Button
+            className="lg:hidden"
+            px="px-3"
+            onClick={toggleNavigation}
+          >
+            <MenuSvg openNavigation={openNavigation} />
+          </Button>
+        </div>
       </div>
     </div>
   );
