@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Button from "./Button";
+// import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
 
@@ -20,14 +20,6 @@ const FAQSection = () => {
       question: "How to register?",
       answer: "Follow this steps for registration : www.techfest.org > Competitions > CoDecode > Explore More -> Register > Fill all your details > You will be registered and now you must either Create a team/Join a team ."
     },
-    // {
-    //   question: "How do I contact customer support?",
-    //   answer: "Customer support is available 24/7 through live chat, email at support@example.com, or by phone at +1-800-123-4567. Our average response time is under 2 hours."
-    // },
-    // {
-    //   question: "Is there a mobile application available?",
-    //   answer: "Yes, our mobile app is available for both iOS and Android devices. You can download it from the App Store or Google Play Store for free and access all features on the go."
-    // }
   ];
 
   const handleQuestionClick = (index) => {
@@ -42,39 +34,39 @@ const FAQSection = () => {
   };
 
   return (
-    <Section className="overflow-hidden" id="faq">
-      <div className="container">
+    <Section className="overflow-hidden"  id="roadmap">
+      <div className="container px-4 sm:px-6 md:px-8">
         <Heading tag="Get Answers" title="Frequently Asked Questions" />
         
-        <div className="flex justify-between items-center mb-8">
-          <div className="text-n-1 text-xl font-bold">Common Questions</div>
-          <div className="flex items-center px-4 py-2 bg-n-6 rounded-2xl">
-            <div className="text-n-4 mr-3">Questions Explored:</div>
-            <div className="text-gradient bg-clip-text text-transparent bg-conic-gradient font-bold text-2xl">{questionsViewed}</div>
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8">
+          <div className="text-n-1 text-lg sm:text-xl font-bold mb-4 sm:mb-0">Common Questions</div>
+          <div className="flex items-center px-3 py-1 sm:px-4 sm:py-2 bg-n-6 rounded-xl sm:rounded-2xl">
+            <div className="text-n-4 text-sm sm:text-base mr-2 sm:mr-3">Questions Explored:</div>
+            <div className="text-gradient bg-clip-text text-transparent bg-conic-gradient font-bold text-xl sm:text-2xl">{questionsViewed}</div>
           </div>
         </div>
 
-        <div className="space-y-4 mb-16">
+        <div className="space-y-3 sm:space-y-4 mb-10 sm:mb-16">
           {faqs.map((faq, index) => (
             <div 
               key={index} 
-              className={`p-0.25 rounded-[2rem] transition-all duration-300 ${activeQuestion === index ? "bg-conic-gradient" : "bg-n-6"}`}
+              className={`p-0.25 rounded-[1.5rem] sm:rounded-[2rem] transition-all duration-300 ${activeQuestion === index ? "bg-conic-gradient" : "bg-n-6"}`}
             >
-              <div className="bg-n-8 rounded-[1.95rem] p-6 overflow-hidden">
+              <div className="bg-n-8 rounded-[1.45rem] sm:rounded-[1.95rem] p-4 sm:p-6 overflow-hidden">
                 <div 
                   className="flex justify-between items-center cursor-pointer"
                   onClick={() => handleQuestionClick(index)}
                 >
-                  <h4 className="h5 text-n-1">{faq.question}</h4>
-                  <div className="w-10 h-10 bg-n-6 rounded-full flex items-center justify-center flex-shrink-0 ml-4">
-                    <div className="text-n-1 text-xl font-bold">
+                  <h4 className="text-sm sm:text-base md:text-lg lg:h5 text-n-1 pr-2">{faq.question}</h4>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-n-6 rounded-full flex items-center justify-center flex-shrink-0 ml-2 sm:ml-4">
+                    <div className="text-n-1 text-lg sm:text-xl font-bold">
                       {activeQuestion === index ? "−" : "+"}
                     </div>
                   </div>
                 </div>
                 
                 {activeQuestion === index && (
-                  <div className="mt-4 body-2 text-n-4 overflow-hidden transition-all duration-300">
+                  <div className="mt-3 sm:mt-4 text-xs sm:text-sm md:text-base text-n-4 overflow-hidden transition-all duration-300">
                     {faq.answer}
                   </div>
                 )}
