@@ -75,6 +75,14 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+import hitchki from "./hitchki.png";
+import silverSystem from "./silverSystem.png";
+import provincialGroup from "./provincialGroup.png";
+import nanikGroup from "./nanikGroup.png";
+import urbanNature from "./urbanNature.png";
+import kukreja from "./kukreja.png";
+import microWorld from "./microWorld.png";
+
 export {
   brainwave,
   check,
@@ -144,4 +152,11 @@ export {
   instagram,
   telegram,
   twitter,
+  hitchki,
+  silverSystem,
+  provincialGroup,
+  nanikGroup,
+  urbanNature,
+  kukreja,
+  microWorld
 };
