@@ -7,6 +7,12 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
+
+// Then in your navigation menu where you have the rules link:
+<Link to="/rules" className="your-existing-classes">
+  Competition Rules
+</Link>
 
 const Header = () => {
   const pathname = useLocation();
