@@ -71,7 +71,7 @@ export const navigation = [
   // },
   {
     id: "5",
-    title: "Register",
+    title: "Submit",
     url: "#",
     onlyMobile: true,
   },

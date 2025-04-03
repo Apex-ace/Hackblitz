@@ -2,7 +2,7 @@ import React from 'react';
 
 const RegisterButton = () => {
   const handleRegister = () => {
-    window.location.href = 'https://unstop.com/p/hackblitz-jhulelal-institute-of-technology-1438941';
+    window.location.href = 'https://github.com/HackBlitz-S2/HackBlitz-Season-2';
   };
 
   return (
@@ -18,10 +18,10 @@ const RegisterButton = () => {
       <span className="relative z-10 flex items-center gap-2">
         <span className="relative">
           <span className="block transition-transform duration-500 group-hover:-translate-y-full">
-            Register Now
+            Submit
           </span>
           <span className="absolute top-full left-0 transition-transform duration-500 group-hover:-translate-y-full">
-            Register Now
+            Submit
           </span>
         </span>
         <svg 

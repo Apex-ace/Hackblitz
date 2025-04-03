@@ -8,6 +8,7 @@ import { useRef } from "react";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import TypingText from "./TypingText";
+import RevealCards from "./RevealCards"; // Import the new component
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -47,6 +48,10 @@ const Hero = () => {
             Join us for an unforgettable experience at Hackblitz, where innovation meets competition! Participate in an intense 8-hour hackathon at Jhulelal Institute of Technology, Lonara, Nagpur, organized by the ACM Student Chapter. Showcase your skills for a chance to win exciting prizes and exclusive goodies!
           </p>
         </div>
+
+        {/* Add the RevealCards component here, before the main image */}
+        <RevealCards />
+        
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24 animate-fade-in-up delay-700">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8/80 backdrop-blur-sm rounded-[1rem] border border-white/10
@@ -108,4 +113,4 @@ const Hero = () => {
   );
 };
 
-export default Hero; 
+export default Hero;

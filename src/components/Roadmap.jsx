@@ -22,7 +22,7 @@ const FAQSection = () => {
     },
     {
       question: "How do I contact customer support?",
-      answer: "Customer support is available 24/7 through email at acmjit@jitnagpur.edu.in."
+      answer: "Customer support is available 24/7 through email at student.acm.chapter@gmail.com."
     },
   
   ];

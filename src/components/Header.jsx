@@ -7,6 +7,12 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
+
+// Then in your navigation menu where you have the rules link:
+<Link to="/rules" className="your-existing-classes">
+  Competition Rules
+</Link>
 
 const Header = () => {
   const pathname = useLocation();
@@ -30,7 +36,7 @@ const Header = () => {
   };
 
   const handleRegister = () => {
-    window.location.href = 'https://unstop.com/p/hackblitz-jhulelal-institute-of-technology-1438941';
+    window.location.href = 'https://github.com/HackBlitz-S2/HackBlitz-Season-2';
   };
 
   return (
@@ -76,7 +82,7 @@ const Header = () => {
             className="flex" 
             onClick={handleRegister}
           >
-            Register
+            Submit
           </Button>
 
           <Button
